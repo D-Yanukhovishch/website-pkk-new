@@ -169,6 +169,7 @@ body {
   align-items: center;
   text-align: center;
   position: relative;
+
 }
 
 .hero3 h1 {
@@ -178,7 +179,6 @@ body {
 .flex {
   display: flex;
   margin: auto;
-  gap: 100px;
 }
 
 .box {
@@ -194,4 +194,80 @@ body {
 .fotocireng {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.info-pembayaran {
+  width: 900px;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.hero4 {
+  background-color: #FFEB95;
+  display: flex;
+  justify-content: space-around;
+  gap: -100px;
+  align-items: center;
+  position: relative;
+  padding: 30px 100px 50px 200px;
+  margin-top: 50px;
+}
+
+.mapwarp {
+  margin-top: 85px;
+  /* padding: 0 20px; */
+  justify-content: end;
+  margin-left: 40px;
+  border: rgb(77, 54, 38) 5px dashed;
+}
+
+.text-content3 h1:nth-child(1) {
+  font-size: 65px;
+  width: 10px;
+}
+
+.text-content3 {
+  padding-left: 10px;
+  width: 300px;
+}
+
+#my-map-display img.text-marker {
+  max-width: none !important;
+  background: none !important;
+  
+}
+
+.mapwarp img {
+  max-width: none
+}
+
+.footer {
+  background-color:rgb(77, 54, 38);
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+}
+
+.footer p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.list-medsos {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.bi-instagram,
+.bi-whatsapp,
+.bi-envelope,
+.bi-facebook,
+.bi-youtube {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
