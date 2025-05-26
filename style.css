@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   height: 70px;
   width: 100%;
@@ -181,19 +185,87 @@ body {
   margin: auto;
 }
 
-.box {
+.card {
   width: 250px;
   height: 380px;
   background-color: #fcfcfc;
   margin: auto;
   margin-top: 80px;
   border-radius: 10px;
-  border: #aaaaaa 1px solid;
+  border: #c2c2c2 1px solid;
 }
 
-.fotocireng {
+.card:nth-of-type(2) {
+  transition: transform 0.3s ease;
+}
+
+.card:nth-of-type(2):hover {
+  transform: scale(1.05);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+}
+
+.card .coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+
+.card:nth-of-type(1):hover::after,
+.card:nth-of-type(3):hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card:nth-of-type(1):hover .coming-soon,
+.card:nth-of-type(3):hover .coming-soon {
+  opacity: 1;
+}
+
+.fotoproduk {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box p {
+  font-size: 13px;
+}
+
+.button {
+  height: 30px;
+  width: 200px;
+  background-color: #ffb700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
 }
 
 .info-pembayaran {
