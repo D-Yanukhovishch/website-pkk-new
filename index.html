@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="script.js"></script>
   <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
   <nav>
     <div>
@@ -45,7 +45,7 @@
         kami baru menyediakan cireng ayam suwir saja dan produk seperti basreng dan kripik pisang belum tersedia. cireng
         ayam suwir adalah produk unggulan kami dan yang terlaris</p>
       <div class="buttons">
-        <a href="#" class="btn primary">PESAN PRODUK KAMI</a>
+        <a href="#list_produk" class="btn primary">PESAN PRODUK KAMI</a>
       </div>
     </div>
     <div class="image-deco">
@@ -76,31 +76,33 @@
     </div>
   </section>
   <section class="hero3">
-    <h1><strong>Produk Kami</strong></h1>
+    <h1 id="list_produk"><strong>Produk Kami</strong></h1>
     <div class="flex">
-      <div class="box">
-        <img src="cirengpedas.jpg" alt="" width="250px" class="fotocireng">
-        <h2 class="judulcireng">Cireng ayam suwir</h2>
-        <p class="deskripsicireng">Cireng berisi ayam suwir pedas yang enak dan pedas berukuran sedang</p>
+      <div class="card">
+        <img src="https://static.promediateknologi.id/crop/0x18:1024x671/0x0/webp/photo/indizone/2022/08/02/o8sAbYl/cara-membuat-keripik-pisang-yang-renyah-dan-tahan-lama-simple53.jpg" alt="" width="250px" class="fotoproduk">
+        <h2>Keripik Pisang</h2>
+        <p><b>Rp. 5.000</b></p>
+        <div class="coming-soon"> COMING SOON</div>
         <a
           href="https://api.whatsapp.com/send?phone=6285692517903&text=Asalamualaikum%2C%20kak%20aku%20mau%20pesen%20cireng"><button
-            type="submit" class="button">Beli sekarang</button></a>
+            type="submit" class="button">Coming Soon</button></a>
       </div>
-      <div class="box">
-        <img src="cirengpedas.jpg" alt="" width="250px" class="fotocireng">
-        <h2 class="judulcireng">Cireng ayam suwir</h2>
-        <p class="deskripsicireng">Cireng berisi ayam suwir pedas yang enak dan pedas berukuran sedang</p>
+      <div class="card">
+        <img src="foto cireng 2.jpg" alt="" width="250px" class="fotoproduk">
+        <h2>Cireng Ayam Suwir</h2>
+        <p><b>Rp. 3.000</b></p>
         <a
           href="https://api.whatsapp.com/send?phone=6285692517903&text=Asalamualaikum%2C%20kak%20aku%20mau%20pesen%20cireng"><button
-            type="submit" class="button">Beli sekarang</button></a>
+            type="submit" class="button">Pesan sekarang</button></a>
       </div>
-      <div class="box">
-        <img src="cirengpedas.jpg" alt="" width="250px" class="fotocireng">
-        <h2 class="judulcireng">Cireng ayam suwir</h2>
-        <p class="deskripsicireng">Cireng berisi ayam suwir pedas yang enak dan pedas berukuran sedang</p>
+      <div class="card">
+        <img src="https://www.finnafood.com/blog/wp-content/uploads/2024/07/cara-membuat-basreng-daun-jeruk.jpg" alt="" width="250px" class="fotoproduk">
+        <h2>Basreng</h2>
+        <p><b>Rp. 5.000</b></p>
+        <div class="coming-soon"> COMING SOON</div>
         <a
           href="https://api.whatsapp.com/send?phone=6285692517903&text=Asalamualaikum%2C%20kak%20aku%20mau%20pesen%20cireng"><button
-            type="submit" class="button">Beli sekarang</button></a>
+            type="submit" class="button">Coming soon</button></a>
       </div>
     </div>
     <p class="info-pembayaran">Untuk pembayaran kami hanya baru bisa melakukan pembayaran secara COD dan belum bisa
@@ -135,5 +137,4 @@
     </div>
   </section>
 </body>
-
 </html>
