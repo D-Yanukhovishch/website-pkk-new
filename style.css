@@ -52,6 +52,7 @@ body {
 
 .logo-atas {
   padding: 100px;
+  width: 100px;
 }
 
 .hero {
@@ -342,4 +343,98 @@ body {
 .bi-youtube {
     font-size: 15px;
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 500px) {
+  .flex {
+    display: block !important;
+}
+  .hero {
+    display: block !important;
+    padding-top: 200px !important;
+    padding: 50px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+
+  .buttons {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .nav {
+    width: 100px;
+  }
+
+  .hero4 {
+    display: block;
+    padding: 0%;
+  }
+
+  .mapwarp {
+    width: 300px;
+    height: 400px;
+  }
+
+  .info-pembayaran {
+    width: 300px;
+    font-size: 10px;
+    margin-top: 50px;
+  }
+
+  .text-content {
+    max-width: 100px;
+  }
+  
+  .text-content h1 {
+    font-size: 50px;
+  }
+
+  .text-content2 {
+    padding: 20px;
+    text-align: justify;
+    width: 600px;
+  }
+
+  .text-content2 h1 {
+    text-align: center;
+  }
+
+  .image-deco {
+    margin: 150px;
+    z-index: 100;
+    margin-top: 30px;
+  }
+
+  .hero2 {
+    padding: 0%;
+    margin-top: 10px;
+  }
+  
+  .image-deco2 {
+    display: none;
+  }
+
+  /* .logo-atas {} */
+
+  .text-content3 {
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .text-content3 h1:nth-child(1) {
+    font-size: 40px;
+    width: 10px;
+    text-align: center;
+}
+
+  .nav {
+    height: 10px;
+  }
+
 }
