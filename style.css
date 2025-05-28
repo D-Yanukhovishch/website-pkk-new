@@ -269,6 +269,10 @@ body {
   margin-top: 20px;
 }
 
+.button:hover {
+  background-color: #d6a21e;
+}
+
 .info-pembayaran {
   width: 900px;
   text-align: center;
@@ -345,96 +349,217 @@ body {
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 500px) {
-  .flex {
-    display: block !important;
+.modal {
+  display: none; /* Sembunyikan modal secara default */
+  position: fixed; /* Tetap di tempat */
+  z-index: 500; /* Di atas elemen lain */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; /* Aktifkan scroll jika diperlukan */
+  background-color: rgba(0,0,0,0.4); /* Warna gelap dengan transparansi */
 }
-  .hero {
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% dari atas dan terpusat */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Lebar bisa disesuaikan */
+  max-width: 600px; /* Lebar maksimum */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: modalopen 0.4s;
+}
+
+@keyframes modalopen {
+  from {opacity: 0; transform: translateY(-50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonTK {
+  height: 30px;
+  width: 30px;
+  background-color: #ffb700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+  
+  nav ul li {
+    padding: 0.5rem;
+  }
+  
+  nav div img {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .logo-atas {
+    padding: 80px 20px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
     display: block !important;
-    padding-top: 200px !important;
-    padding: 50px;
   }
-
-  .hero p {
-    font-size: 15px;
-    margin: auto;
-    width: 300px;
-    margin-bottom: 50px;
+  
+  .logo-atas img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto;
   }
-
-  .buttons {
-    width: 300px;
-    margin-top: 20px;
+  
+  .hero {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px !important;
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 2;
   }
-
-  .nav {
-    width: 100px;
-  }
-
-  .hero4 {
-    display: block;
-    padding: 0%;
-  }
-
-  .mapwarp {
-    width: 300px;
-    height: 400px;
-  }
-
-  .info-pembayaran {
-    width: 300px;
-    font-size: 10px;
-    margin-top: 50px;
-  }
-
+  
   .text-content {
-    max-width: 100px;
+    max-width: 100%;
   }
   
   .text-content h1 {
     font-size: 50px;
+    margin-top: 20px;
+    max-width: 50px;
   }
-
-  .text-content2 {
-    padding: 20px;
-    text-align: justify;
-    width: 600px;
+  
+  .text-content p {
+    font-size: px;
+    width: 100%;
+    margin: 15px 0;
   }
-
-  .text-content2 h1 {
+  
+  .buttons {
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+  }
+  
+  .btn {
+    width: 100%;
     text-align: center;
   }
-
-  .image-deco {
-    margin: 150px;
-    z-index: 100;
-    margin-top: 30px;
+  
+    .image-deco {
+    margin: 30px auto !important;
+    width: 100% !important;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  
+  .image-deco img {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 10px 0;
+    width: 60% !important;
+  }
+  
   .hero2 {
-    padding: 0%;
-    margin-top: 10px;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  
+  .text-content2 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    box-sizing: border-box;
   }
   
   .image-deco2 {
     display: none;
   }
-
-  /* .logo-atas {} */
-
-  .text-content3 {
-    margin: auto;
-    margin-top: 100px;
+  
+  .hero3 h1 {
+    font-size: 2rem;
+    margin-top: 30px;
   }
-
-  .text-content3 h1:nth-child(1) {
-    font-size: 40px;
-    width: 10px;
+  
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 60%;
+    margin: 20px auto;
+  }
+  
+  .info-pembayaran {
+    width: 90%;
+    font-size: 0.9rem;
+    margin: 30px auto;
+  }
+  
+  .hero4 {
+    flex-direction: column;
+    padding: 20px;
     text-align: center;
-}
-
-  .nav {
-    height: 10px;
   }
-
+  
+  .text-content3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-content3 h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  
+  .mapwarp {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+  }
+  
+  .mapwarp div {
+    width: 100% !important;
+  }
+  
+  #my-map-display {
+    height: 250px !important;
+    border: rgb(77, 54, 38) 5px dashed;
+  }
+  
+  .footer {
+    padding: 20px;
+  }
+  
+  .list-medsos {
+    gap: 20px;
+  }
 }
