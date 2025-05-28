@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="script.js"></script>
   <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
@@ -91,9 +90,7 @@
         <img src="foto cireng 2.jpg" alt="" width="250px" class="fotoproduk">
         <h2>Cireng Ayam Suwir</h2>
         <p><b>Rp. 3.000</b></p>
-        <a
-          href="https://api.whatsapp.com/send?phone=6285692517903&text=Asalamualaikum%2C%20kak%20aku%20mau%20pesen%20cireng"><button
-            type="submit" class="button">Pesan sekarang</button></a>
+        <button class="button" id="openModalBtn">Pesan sekarang</button>
       </div>
       <div class="card">
         <img src="https://www.finnafood.com/blog/wp-content/uploads/2024/07/cara-membuat-basreng-daun-jeruk.jpg" alt="" width="250px" class="fotoproduk">
@@ -103,6 +100,20 @@
         <a
           href=""><button
             type="submit" class="button">Coming soon</button></a>
+        </div>
+    </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">×</span>
+          <h2>Produk yang dipesan</h2>
+          <h3>Cireng Ayam Suwir</h3>
+          <h3 id="totalp">0</h3>
+          <b><p id="totalharga">Rp 0</p></b>
+          <button onclick="Tambahpesanan()" class="buttonTK">+</button>
+          <button onclick="Kurangipesanan()" class="buttonTK">-</button><br>
+          <button class="button" onclick="checkoutWhatsApp()">Check out</button>
       </div>
     </div>
     <p class="info-pembayaran">Untuk pembayaran kami hanya baru bisa melakukan pembayaran secara COD dan belum bisa
@@ -135,5 +146,6 @@
         <a href="https://www.youtube.com/@CemilanCeria"><i class="bi bi-youtube"></i></a>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
