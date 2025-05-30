@@ -1,565 +1,1135 @@
 html {
+
+
+
   scroll-behavior: smooth;
+
+
+
 }
 
+
+
 nav {
+
   height: 70px;
+
   width: 100%;
+
   background-color: rgb(77, 54, 38);
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   position: fixed;
+
   z-index: 9999;
 
 
+
+
+
 }
+
+
 
 nav ul {
+
   display: flex;
+
 }
+
+
 
 nav ul li {
+
   list-style: none;
+
   padding: 2rem
+
 }
+
+
 
 nav div img {
+
   height: 50px;
+
   width: 50px;
+
   margin-left: 30px;
+
 }
+
+
 
 nav ul li a {
+
   color: rgb(44, 41, 41);
+
   border: 14px;
+
   border-radius: 5px;
+
   transition-duration: 140ms;
 
+
+
 }
+
+
 
 .navbartext {
+
   color: white;
+
 }
 
+
+
 body {
+
   margin: 0;
+
   font-family: 'Segoe UI', sans-serif;
+
   background: white;
+
   color: #333;
+
 }
+
+
+
 
 
 .logo-atas {
+
   padding: 100px;
+
   width: 100px;
+
 }
+
+
 
 .hero {
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   padding: 200px;
+
   position: relative;
+
   margin-top: -400px;
+
 }
+
+
 
 .text-content {
+
   max-width: 500px;
+
 }
+
+
 
 .text-content h1 {
+
   font-size: 70px;
+
 }
+
+
 
 .text-content h1 span {
+
   color: #fbbf24;
+
 }
+
+
 
 .text-content p {
+
   font-size: 18px;
+
   margin: 10px 0 30px;
+
 }
+
+
 
 .buttons {
+
   display: flex;
+
   gap: 15px;
+
 }
+
+
 
 .btn {
+
   padding: 12px 24px;
+
   text-decoration: none;
+
   font-weight: bold;
+
   border-radius: 25px;
+
   transition: 0.3s;
+
 }
+
+
 
 .btn.primary {
+
   background: #fbbf24;
+
   color: white;
+
 }
+
+
 
 .btn.secondary {
+
   border: 2px solid #fbbf24;
+
   color: #fbbf24;
+
   background: white;
+
 }
+
+
 
 .image-deco {
+
   position: relative;
+
   width: 50%;
+
 }
+
+
 
 .image-deco img {
+
   width: 180px;
+
   border-radius: 50%;
+
   object-fit: cover;
+
   position: absolute;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
+
+
 
 .img1 {
+
   top: -20px;
+
   right: 80px;
+
 }
+
+
 
 .img2 {
+
   top: 100px;
+
   right: 0;
+
 }
+
+
 
 .img3 {
+
   top: 200px;
+
   right: 120px;
+
 }
+
+
 
 .hero2 {
+
   background-color: #FFEB95;
+
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   position: relative;
+
   padding-bottom: 50px;
+
 }
+
+
 
 .text-content2 {
+
   max-width: 500px;
+
   margin: 100px;
+
   background-color: #fbbf24;
+
   padding: 20px 50px;
+
   border-radius: 30px;
+
 }
+
+
 
 .image-deco2 {
+
   position: relative;
+
   width: 50%;
+
   padding-top: 200px;
+
 }
+
+
 
 .image-deco2 img {
+
   width: 180px;
+
   border-radius: 50%;
+
   object-fit: cover;
+
   position: absolute;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
+
+
 
 .hero2 .image-deco2 img:nth-child(2) {
+
   top: 80px;
+
   right: 250px;
+
 }
+
+
 
 .hero3 {
+
   justify-content: space-between;
+
   align-items: center;
+
   text-align: center;
+
   position: relative;
 
+
+
 }
+
+
 
 .hero3 h1 {
+
   font-size: 40px;
+
 }
+
+
 
 .flex {
+
   display: flex;
+
   margin: auto;
+
 }
 
+
+
 .card {
+
   width: 250px;
+
   height: 380px;
+
   background-color: #fcfcfc;
+
   margin: auto;
+
   margin-top: 80px;
+
   border-radius: 10px;
+
   border: #c2c2c2 1px solid;
+
 }
+
+
 
 .card:nth-of-type(2) {
+
   transition: transform 0.3s ease;
+
 }
+
+
 
 .card:nth-of-type(2):hover {
+
   transform: scale(1.05);
+
 }
+
+
 
 .card {
+
   position: relative;
+
   overflow: hidden;
+
 }
+
+
 
 .card::after {
+
   content: "";
+
   position: absolute;
+
   top: 0;
+
   left: 0;
+
   width: 100%;
+
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0);
+
   transition: background-color 0.3s ease;
+
   pointer-events: none;
+
 }
 
+
+
 .card .coming-soon {
+
   position: absolute;
+
   top: 50%;
+
   left: 50%;
+
   transform: translate(-50%, -50%);
+
   color: white;
+
   font-weight: bold;
+
   font-size: 1.5rem;
+
   opacity: 0;
+
   transition: opacity 0.3s ease;
+
   pointer-events: none;
+
   z-index: 2;
+
 }
+
+
+
 
 
 .card:nth-of-type(1):hover::after,
+
 .card:nth-of-type(3):hover::after {
+
   background-color: rgba(0, 0, 0, 0.5);
+
 }
+
+
 
 .card:nth-of-type(1):hover .coming-soon,
+
 .card:nth-of-type(3):hover .coming-soon {
+
   opacity: 1;
+
 }
+
+
 
 .fotoproduk {
+
   border-top-left-radius: 10px;
+
   border-top-right-radius: 10px;
+
   width: 100%;
+
   height: 200px;
+
   object-fit: cover;
+
 }
+
+
 
 .box p {
+
   font-size: 13px;
+
 }
+
+
 
 .button {
+
   height: 30px;
+
   width: 200px;
+
   background-color: #ffb700;
+
   border: none;
+
   border-radius: 5px;
+
   color: white;
+
   font-size: 13px;
+
   margin-top: 20px;
+
 }
+
+
 
 .button:hover {
+
   background-color: #d6a21e;
+
 }
+
+
 
 .info-pembayaran {
+
   width: 900px;
+
   text-align: center;
+
   margin: auto;
+
   margin-top: 100px;
+
 }
+
+
 
 .hero4 {
+
   background-color: #FFEB95;
+
   display: flex;
+
   justify-content: space-around;
+
   gap: -100px;
+
   align-items: center;
+
   position: relative;
+
   padding: 30px 100px 50px 200px;
+
   margin-top: 50px;
+
 }
+
+
 
 .mapwarp {
+
   margin-top: 85px;
+
   /* padding: 0 20px; */
+
   justify-content: end;
+
   margin-left: 40px;
+
   border: rgb(77, 54, 38) 5px dashed;
+
 }
+
+
 
 .text-content3 h1:nth-child(1) {
+
   font-size: 65px;
+
   width: 10px;
+
 }
+
+
 
 .text-content3 {
+
   padding-left: 10px;
+
   width: 300px;
+
 }
+
+
 
 #my-map-display img.text-marker {
+
   max-width: none !important;
+
   background: none !important;
+
   
+
 }
+
+
 
 .mapwarp img {
+
   max-width: none
+
 }
+
+
 
 .footer {
+
   background-color:rgb(77, 54, 38);
+
   margin: 0;
+
   text-align: center;
+
   padding: 40px;
+
 }
+
+
 
 .footer p {
+
   text-align: center;
+
   color: rgb(255, 255, 255);
+
 }
+
+
 
 .list-medsos {
+
   display: flex;
+
   gap: 50px;
+
   justify-content: center;
+
   align-items: center;
+
   align-content: center;
+
   margin: auto;
+
 }
+
+
 
 .bi-instagram,
+
 .bi-whatsapp,
+
 .bi-envelope,
+
 .bi-facebook,
+
 .bi-youtube {
+
     font-size: 15px;
+
     color: rgb(255, 255, 255);
+
 }
+
+
 
 .modal {
+
   display: none; /* Sembunyikan modal secara default */
+
   position: fixed; /* Tetap di tempat */
+
   z-index: 500; /* Di atas elemen lain */
+
   left: 0;
+
   top: 0;
+
   width: 100%; 
+
   height: 100%;
+
   overflow: auto; /* Aktifkan scroll jika diperlukan */
+
   background-color: rgba(0,0,0,0.4); /* Warna gelap dengan transparansi */
+
 }
+
+
 
 .modal-content {
+
   background-color: #fefefe;
+
   margin: 15% auto; /* 15% dari atas dan terpusat */
+
   padding: 20px;
+
   border: 1px solid #888;
+
   width: 80%; /* Lebar bisa disesuaikan */
+
   max-width: 600px; /* Lebar maksimum */
+
   border-radius: 8px;
+
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
   animation: modalopen 0.4s;
+
 }
+
+
 
 @keyframes modalopen {
+
   from {opacity: 0; transform: translateY(-50px);}
+
   to {opacity: 1; transform: translateY(0);}
+
 }
+
+
 
 .close {
+
   color: #aaa;
+
   float: right;
+
   font-size: 28px;
+
   font-weight: bold;
+
 }
+
+
 
 .close:hover,
+
 .close:focus {
+
   color: black;
+
   text-decoration: none;
+
   cursor: pointer;
+
 }
+
+
 
 .buttonTK {
+
   height: 30px;
+
   width: 30px;
+
   background-color: #ffb700;
+
   border: none;
+
   border-radius: 5px;
+
   color: white;
+
   font-size: 13px;
+
 }
 
+
+
 @media (max-width: 768px) {
+
   nav {
+
     height: 60px;
-    padding: 0 10px;
-  }
-  
-  nav ul li {
-    padding: 0.5rem;
-  }
-  
-  nav div img {
-    margin-left: 10px;
-    height: 40px;
-    width: 40px;
-  }
-  
-  .logo-atas {
-    padding: 80px 20px 20px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    display: block !important;
-  }
-  
-  .logo-atas img {
-    height: 60px;
-    width: auto;
-    margin: 0 auto;
-  }
-  
-  .hero {
-    display: flex !important;
-    flex-direction: column;
-    padding: 20px !important;
-    margin-top: 0 !important;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .text-content {
-    max-width: 100%;
-  }
-  
-  .text-content h1 {
-    font-size: 50px;
-    margin-top: 20px;
-    max-width: 50px;
-  }
-  
-  .text-content p {
-    font-size: px;
-    width: 100%;
-    margin: 15px 0;
-  }
-  
-  .buttons {
-    flex-direction: column;
-    width: 200px;
-    gap: 10px;
-  }
-  
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-  
-    .image-deco {
-    margin: 30px auto !important;
-    width: 100% !important;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .image-deco img {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    margin: 10px 0;
-    width: 60% !important;
-  }
-  
-  .hero2 {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
-  
-  .text-content2 {
-    width: 100%;
-    margin: 20px 0;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  
-  .image-deco2 {
-    display: none;
-  }
-  
-  .hero3 h1 {
-    font-size: 2rem;
-    margin-top: 30px;
-  }
-  
-  .flex {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .card {
-    width: 60%;
-    margin: 20px auto;
-  }
-  
-  .info-pembayaran {
-    width: 90%;
-    font-size: 0.9rem;
-    margin: 30px auto;
-  }
-  
-  .hero4 {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .text-content3 {
-    width: 100%;
-    margin: 0;
+
     padding: 0;
+
+    gap: 10px;
+
   }
+
   
-  .text-content3 h1 {
-    font-size: 2rem;
+
+  nav ul li {
+
+    padding: 0.5rem;
+
+  }
+
+  
+
+  nav div img {
+
+    margin-left: 10px;
+
+    height: 40px;
+
+    width: 40px;
+
+  }
+
+  
+
+  .logo-atas {
+
+    padding: 80px 20px 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 1;
+
+    display: block !important;
+
+  }
+
+  
+
+  .logo-atas img {
+
+    height: 60px;
+
+    width: auto;
+
+    margin: 0 auto;
+
+  }
+
+  
+
+  .hero {
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    padding: 20px !important;
+
+    margin-top: 0 !important;
+
+    position: relative;
+
+    z-index: 2;
+
+  }
+
+  
+
+  .text-content {
+
+    max-width: 100%;
+
+  }
+
+  
+
+  .text-content h1 {
+
+    font-size: 50px;
+
+    margin-top: 20px;
+
+    max-width: 50px;
+
+  }
+
+  
+
+  .text-content p {
+
+    font-size: px;
+
     width: 100%;
+
+    margin: 15px 0;
+
   }
+
   
-  .mapwarp {
+
+  .buttons {
+
+    flex-direction: column;
+
+    width: 200px;
+
+    gap: 10px;
+
+  }
+
+  
+
+  .btn {
+
     width: 100%;
-    margin: 20px 0;
-    border: none;
+
+    text-align: center;
+
   }
+
   
-  .mapwarp div {
+
+    .image-deco {
+
+    margin: 30px auto !important;
+
     width: 100% !important;
+
+    height: auto;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
   }
+
   
-  #my-map-display {
-    height: 250px !important;
-    border: rgb(77, 54, 38) 5px dashed;
+
+  .image-deco img {
+
+    position: relative !important;
+
+    top: auto !important;
+
+    right: auto !important;
+
+    margin: 10px 0;
+
+    width: 60% !important;
+
   }
+
   
-  .footer {
+
+  .hero2 {
+
+    flex-direction: column-reverse;
+
     padding: 20px;
+
   }
+
   
-  .list-medsos {
-    gap: 20px;
+
+  .text-content2 {
+
+    width: 100%;
+
+    margin: 20px 0;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
   }
+
+  
+
+  .image-deco2 {
+
+    display: none;
+
+  }
+
+  
+
+  .hero3 h1 {
+
+    font-size: 2rem;
+
+    margin-top: 30px;
+
+  }
+
+  
+
+  .flex {
+
+    flex-direction: column;
+
+    gap: 20px;
+
+  }
+
+  
+
+  .card {
+
+    width: 60%;
+
+    margin: 20px auto;
+
+  }
+
+  
+
+  .info-pembayaran {
+
+    width: 90%;
+
+    font-size: 0.9rem;
+
+    margin: 30px auto;
+
+  }
+
+  
+
+  .hero4 {
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    text-align: center;
+
+  }
+
+  
+
+  .text-content3 {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  
+
+  .text-content3 h1 {
+
+    font-size: 2rem;
+
+    width: 100%;
+
+  }
+
+  
+
+  .mapwarp {
+
+    width: 100%;
+
+    margin: 20px 0;
+
+    border: none;
+
+  }
+
+  
+
+  .mapwarp div {
+
+    width: 100% !important;
+
+  }
+
+  
+
+  #my-map-display {
+
+    height: 250px !important;
+
+    border: rgb(77, 54, 38) 5px dashed;
+
+  }
+
+  
+
+  .footer {
+
+    padding: 20px;
+
+  }
+
+  
+
+  .list-medsos {
+
+    gap: 20px;
+
+  }
+
 }
