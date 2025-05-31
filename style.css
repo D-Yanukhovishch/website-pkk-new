@@ -706,11 +706,11 @@ body {
 
 .modal {
 
-  display: none; /* Sembunyikan modal secara default */
+  display: none; /* umpetin modal secara default */
 
-  position: fixed; /* Tetap di tempat */
+  position: fixed;
 
-  z-index: 500; /* Di atas elemen lain */
+  z-index: 500; 
 
   left: 0;
 
@@ -720,9 +720,10 @@ body {
 
   height: 100%;
 
-  overflow: auto; /* Aktifkan scroll jika diperlukan */
+  overflow: auto; 
+  
 
-  background-color: rgba(0,0,0,0.4); /* Warna gelap dengan transparansi */
+  background-color: rgba(0,0,0,0.4); 
 
 }
 
@@ -732,15 +733,15 @@ body {
 
   background-color: #fefefe;
 
-  margin: 15% auto; /* 15% dari atas dan terpusat */
+  margin: 15% auto; 
 
   padding: 20px;
 
   border: 1px solid #888;
 
-  width: 80%; /* Lebar bisa disesuaikan */
+  width: 80%; 
 
-  max-width: 600px; /* Lebar maksimum */
+  max-width: 600px; 
 
   border-radius: 8px;
 
